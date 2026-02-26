@@ -73,3 +73,7 @@
 ;;
 ;; You can also try 'gd' (or 'C-c c d') to jump to their definition and see how
 ;; they are implemented.
+
+(setq shell-file-name (executable-find "bash"))
+(setq-default vterm-shell "/usr/bin/fish")
+(setq-default explicit-shell-file-name "/usr/bin/fish")
