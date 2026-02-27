@@ -77,3 +77,6 @@
 (setq shell-file-name (executable-find "bash"))
 (setq-default vterm-shell "/usr/bin/fish")
 (setq-default explicit-shell-file-name "/usr/bin/fish")
+
+;; Keybinds: 10j, C-d, C-u, 3 C-d, [m, ]m (methods), 3 [c, c] ()comments), [#, #] (preprocessor drive)
+(setq display-line-numbers-type 'relative)
