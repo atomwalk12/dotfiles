@@ -87,3 +87,15 @@
       auto-save-interval 200)  ;; keystrokes between autosaves
 
 (setq-hook! 'python-mode-hook +format-with '(isort))
+
+;; Add treesitter support for python code
+;; (after! evil-textobj-tree-sitter
+;;   (defun +my-tree-sitter-goto-function-outer-previous ()
+;;     (interactive)
+;;     (evil-textobj-tree-sitter-goto-textobj "function.outer" t))
+;;   (defun +my-tree-sitter-goto-function-outer-next ()
+;;     (interactive)
+;;     (evil-textobj-tree-sitter-goto-textobj "function.outer"))
+;;   (map! :map evil-normal-state-map
+;;         "[g" #'+my-tree-sitter-goto-function-outer-previous
+;;         "]g" #'+my-tree-sitter-goto-function-outer-next))
