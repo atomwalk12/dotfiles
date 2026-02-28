@@ -85,3 +85,5 @@
 (setq auto-save-default t
       auto-save-timeout 2      ;; seconds of idle time
       auto-save-interval 200)  ;; keystrokes between autosaves
+
+(setq-hook! 'python-mode-hook +format-with '(isort))
