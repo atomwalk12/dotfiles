@@ -80,3 +80,8 @@
 
 ;; Keybinds: 10j, C-d, C-u, 3 C-d, [m, ]m (methods), 3 [c, c] ()comments), [#, #] (preprocessor drive)
 (setq display-line-numbers-type 'relative)
+
+;; Auto-save files when idle
+(setq auto-save-default t
+      auto-save-timeout 2      ;; seconds of idle time
+      auto-save-interval 200)  ;; keystrokes between autosaves
