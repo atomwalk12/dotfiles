@@ -86,7 +86,7 @@
       auto-save-timeout 2      ;; seconds of idle time
       auto-save-interval 200)  ;; keystrokes between autosaves
 
-(setq-hook! 'python-mode-hook +format-with '(isort))
+(setq-hook! '(python-mode-hook python-ts-mode-hook) +format-with '(isort))
 
 ;; Add treesitter support for python code
 ;; (after! evil-textobj-tree-sitter

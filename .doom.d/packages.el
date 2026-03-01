@@ -54,4 +54,4 @@
 ;; (unpin! t)
 
 ;; TODO(atom): this may be done implicitly
-(package! py-isort)
+;; (package! py-isort)
