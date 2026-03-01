@@ -88,6 +88,9 @@
 
 (setq-hook! '(python-mode-hook python-ts-mode-hook) +format-with '(isort))
 
+;; Auto-reload files when they change on disk
+(global-auto-revert-mode 1)
+
 ;; Add treesitter support for python code
 ;; (after! evil-textobj-tree-sitter
 ;;   (defun +my-tree-sitter-goto-function-outer-previous ()
