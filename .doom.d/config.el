@@ -103,6 +103,15 @@
 ;; Auto-format file on save
 (setq-hook! '(python-mode-hook python-ts-mode-hook) +format-with '(isort))
 
+(after! python
+  (map! :localleader
+        :map python-base-mode-map
+        :prefix ("i" . "imports")
+        :desc "Insert missing import" "i" #'pyimport-insert-missing
+        :desc "Remove unused imports" "r" #'pyimport-remove-unused
+        :desc "Sort imports" "s" #'py-isort-buffer
+        :desc "Optimize imports" "o" #'+python/optimize-imports))
+
 ;; ----- Other settings -----
 ;; LLM selection
 ;; LLM auto-completion support
