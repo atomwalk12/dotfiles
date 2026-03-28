@@ -149,3 +149,9 @@
          :desc "Accept completion"     "C" #'gptel-accept-completion
          :desc "Accept word"           "w" #'gptel-accept-word
          :desc "Toggle autocomplete"   "t" #'gptel-autocomplete-mode)))
+
+
+(after! igist
+  ;; configuration guide:
+  ;; https://github.com/KarimAziev/igist?tab=readme-ov-file#secure-way-using-auth-sources
+  (setq igist-auth-marker 'igist))

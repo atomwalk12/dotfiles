@@ -61,3 +61,6 @@
 
 (package! gptel-autocomplete
   :recipe (:host github :repo "JDNdeveloper/gptel-autocomplete"))
+
+(package! igist
+  :recipe (:host github :repo "KarimAziev/igist"))
